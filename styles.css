@@ -1,0 +1,122 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Fix scrolling issue */
+    height: 100vh;
+    margin: 0;
+    overflow-y: auto; /* Allows vertical scrolling */
+}
+
+/* Main container styling */
+.container {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Input field styling */
+input {
+    width: 90%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+/* Green Text for Institution Name & Assignment Topic */
+.inst-name, .assignment-topic {
+    color: green;
+    font-weight: bold;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    margin-top: 15px;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 2px solid blue; /* Blue border for table */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Buttons */
+button {
+    width: 90%;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Generate Button */
+#generateBtn {
+    background-color: #28a745;
+}
+
+#generateBtn:hover {
+    background-color: #218838;
+}
+
+/* Restart Button */
+#restartBtn {
+    background-color: #dc3545;
+    display: none;
+}
+
+#restartBtn:hover {
+    background-color: #c82333;
+}
+
+/* View & Download Buttons */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.button-group button {
+    width: 45%;
+}
+
+#viewPDF {
+    background-color: #007bff;
+    display: none;
+}
+
+#viewPDF:hover {
+    background-color: #0056b3;
+}
+
+#downloadPDF {
+    background-color: #ffc107;
+    color: black;
+    display: none;
+}
+
+#downloadPDF:hover {
+    background-color: #e0a800;
+}

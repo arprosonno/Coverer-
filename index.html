@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Cover Page Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Assignment Cover Page Generator</h2>
+
+    <!-- Institution Name -->
+    <label for="instName1">Institution Name (Line 1):</label>
+    <input type="text" id="instName1" placeholder="Enter institution name (line 1)">
+    
+    <label for="instName2">Institution Name (Line 2):</label>
+    <input type="text" id="instName2" placeholder="Enter institution name (line 2)">
+
+    <!-- Institution Logo -->
+    <label for="instLogo">Institution Logo:</label>
+    <input type="file" id="instLogo" accept="image/*">
+
+    <!-- Assignment Topic -->
+    <label for="assignmentTopic">Assignment Topic:</label>
+    <input type="text" id="assignmentTopic" placeholder="Enter assignment topic">
+
+    <h3>Submitted By</h3>
+    <label for="studentName">Name:</label>
+    <input type="text" id="studentName" placeholder="Enter your name">
+
+    <label for="studentID">ID:</label>
+    <input type="text" id="studentID" placeholder="Enter your ID">
+
+    <label for="studentDept">Department:</label>
+    <input type="text" id="studentDept" placeholder="Enter your department">
+
+    <h3>Submitted To</h3>
+    <label for="teacherName">Teacher's Name:</label>
+    <input type="text" id="teacherName" placeholder="Enter teacher's name">
+
+    <label for="teacherDesignation">Designation:</label>
+    <input type="text" id="teacherDesignation" placeholder="Enter teacher's designation">
+
+    <label for="teacherDept">Department:</label>
+    <input type="text" id="teacherDept" placeholder="Enter teacher's department">
+
+    <!-- Submission Date -->
+    <label for="submissionDate">Submission Date:</label>
+    <input type="date" id="submissionDate">
+
+    <!-- Buttons -->
+    <button id="generateBtn" onclick="generatePDF()">Generate PDF</button>
+    <button id="restartBtn" onclick="restartForm()" style="display: none;">Restart</button>
+
+    <div class="button-group">
+        <button id="viewPDF" onclick="viewPDF()" style="display: none;">View PDF</button>
+        <button id="downloadPDF" onclick="downloadPDF()" style="display: none;">Download PDF</button>
+    </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
